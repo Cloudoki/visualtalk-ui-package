@@ -1,0 +1,23 @@
+.vt-panel {
+	border-radius: 5px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 40px;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+
+	.vt-panel-subtitle {
+		color: $grey;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	&.half-size {
+		max-width: 600px;
+	}
+
+	.separator {
+		border-bottom: 1px solid #e5e5e5;
+		padding-top: 35px;
+		margin-bottom: 35px;
+	}
+}

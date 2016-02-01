@@ -79,7 +79,7 @@ gulp.task('handlebars', function(){
     return gulp.src(dirs.source+'/pages/*.hbs')
         .pipe(gulpHandlebars(templateData, options))
         .pipe(rename(function(path){
-             filename = path.basename
+             filename = path.basename; console.log(filename)
          }))
         .pipe(addsrc.prepend(dirs.components+'/_global/head.html'))
         .pipe(addsrc.append(dirs.components+'/_global/foot.html'))

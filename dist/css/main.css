@@ -1,0 +1,131 @@
+/* main scss file */
+html {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: Open Sans;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #eee;
+  color: #3a3a3a;
+  position: relative;
+  font-weight: 300; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+table {
+  width: 100%; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
+.muted {
+  color: #7f8c90; }
+
+.center {
+  text-align: center; }
+
+.big {
+  font-size: 1.2em; }
+
+.strong {
+  font-weight: 600; }
+
+#main-content {
+  padding-top: 90px;
+  padding-bottom: 40px; }
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.vt-page-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 15px; }
+
+.vt-btn {
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #ccc;
+  padding: 10px 20px;
+  color: #fff; }
+  .vt-btn.wide {
+    padding: 10px 50px; }
+  .vt-btn.full {
+    width: 100%; }
+  .vt-btn.greened {
+    background-color: #3adb76; }
+    .vt-btn.greened:hover {
+      background-color: #2ec566; }
+  .vt-btn:hover {
+    cursor: pointer; }
+
+header nav.navbar-default {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.15); }
+  header nav.navbar-default .navbar-nav > li {
+    margin: 0 10px; }
+    header nav.navbar-default .navbar-nav > li > a {
+      padding-top: 25px;
+      padding-bottom: 25px; }
+  header nav.navbar-default .navbar-brand {
+    padding: 23px 0 23px 0;
+    height: 70px;
+    margin-right: 80px; }
+
+.vt-avatar {
+  border-radius: 100%;
+  overflow: hidden; }
+  .vt-avatar.big {
+    max-width: 100px; }
+
+.message-block {
+  font-size: .8em; }
+  .message-block .message-block-title {
+    font-weight: bold; }
+  .message-block .message {
+    position: relative;
+    padding: 20px 0 0; }
+    .message-block .message .message-avatar {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 50px; }
+    .message-block .message .message-body {
+      padding-left: 65px;
+      min-height: 50px; }
+      .message-block .message .message-body .message-content {
+        font-weight: 400; }
+      .message-block .message .message-body .message-meta {
+        color: #7f8c90;
+        font-size: .9em;
+        padding: 15px 0;
+        border-bottom: 1px solid #e5e5e5; }
+    .message-block .message:last-child .message-body .message-meta {
+      border: none; }
+
+.vt-panel {
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 40px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06); }
+  .vt-panel .vt-panel-subtitle {
+    color: #7f8c90;
+    text-align: center;
+    margin-bottom: 15px; }
+  .vt-panel.half-size {
+    max-width: 600px; }
+  .vt-panel .separator {
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 35px;
+    margin-bottom: 35px; }

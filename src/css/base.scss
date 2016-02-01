@@ -1,0 +1,64 @@
+html{
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	font-family: Open Sans;
+	height: 100%; 
+	margin: 0px; 
+	padding: 0px;
+	background-color: #eee;
+	color: #3a3a3a;
+	position: relative;
+	font-weight: 300;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+table {
+	width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+.muted {
+	color: $grey;
+}
+
+.center {
+	text-align: center;
+}
+
+.big {
+	font-size: 1.2em;
+}
+
+.strong {
+	font-weight: 600;
+}
+
+#main-content {
+	padding-top: 90px;
+	padding-bottom: 40px;
+}
+
+.content-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.vt-page-header {
+	text-align: center;
+	margin-bottom: 50px;
+    padding-top: 15px;
+}

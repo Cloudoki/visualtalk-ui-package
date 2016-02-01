@@ -1,0 +1,50 @@
+.vt-avatar {
+	border-radius: 100%;
+	overflow: hidden;
+
+	&.big {
+		max-width: 100px;
+	}
+}
+
+.message-block {
+	font-size: .8em; 
+
+	.message-block-title {
+		font-weight: bold;
+	}
+
+	.message {
+		position: relative;
+		padding: 20px 0 0;
+
+		.message-avatar {
+			position: absolute;
+			left: 0;
+			top: 20px;
+			width: 50px;
+		}
+
+		.message-body {
+			padding-left: 65px;
+			min-height: 50px;
+
+			.message-content {
+				font-weight: 400;
+			}
+
+			.message-meta {
+				color: $grey;
+				font-size: .9em;
+				padding: 15px 0;
+				border-bottom: 1px solid #e5e5e5;
+			}
+		}
+
+		&:last-child {
+			.message-body .message-meta {
+				border: none;
+			}
+		}
+	}
+}
