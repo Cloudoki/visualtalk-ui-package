@@ -1,7 +1,7 @@
 {
-  "name": "ui_donder_starter",
+  "name": "visualtalk-ui-package",
   "version": "0.0.1",
-  "description": "Boilerplate for general UI package development using gulp, sass and bower",
+  "description": "Base UI package for visualtalk",
   "homepage": "www.cloudoki.com",
   "author": "Rui Molefas",
   "email": "rui@cloudoki.com",
