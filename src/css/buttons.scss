@@ -5,6 +5,7 @@
     padding: 10px 20px;
     color: #fff;
     text-align: center;
+    text-decoration: none;
 
     > i {
         margin-right: 10px;
@@ -29,7 +30,17 @@
     	}
     }
 
+    &.redded {
+        background-color: $red;
+        &:hover {
+            background-color: $dark-red;
+        }
+    }
+
     &:hover {
+        background-color: $dark-blue;
     	cursor: pointer;
+        color: #fff;
+        text-decoration: none;
     }
 }

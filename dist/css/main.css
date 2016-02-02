@@ -4,7 +4,7 @@ html {
 
 body {
   font-size: 16px;
-  font-family: Open Sans;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -12,6 +12,9 @@ body {
   color: #3a3a3a;
   position: relative;
   font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
 
 img {
   max-width: 100%;
@@ -66,7 +69,8 @@ i.icon {
   background-color: #2198e8;
   padding: 10px 20px;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
   .vt-btn > i {
     margin-right: 10px; }
   .vt-btn.small {
@@ -79,8 +83,15 @@ i.icon {
     background-color: #3adb76; }
     .vt-btn.greened:hover {
       background-color: #2ec566; }
+  .vt-btn.redded {
+    background-color: #e94a35; }
+    .vt-btn.redded:hover {
+      background-color: #d13722; }
   .vt-btn:hover {
-    cursor: pointer; }
+    background-color: #1684cf;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none; }
 
 header nav.navbar-default {
   background-color: #fff;
@@ -186,23 +197,23 @@ footer {
     .appointment-block .appointments .appointment td:last-child {
       padding-right: 0; }
   .appointment-block.active .vt-btn {
-    background-color: #2198e8 !important; }
+    background-color: #2198e8; }
 
 .vt-panel {
   border-radius: 5px;
   background-color: #fff;
   margin: 0 auto;
-  padding: 40px;
+  padding: 50px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06); }
   .vt-panel .vt-panel-subtitle {
     color: #7f8c90;
     text-align: center;
     margin-bottom: 15px; }
   .vt-panel.half-size {
-    max-width: 600px; }
+    max-width: 550px; }
   .vt-panel.big-size {
     max-width: 700px; }
   .vt-panel .separator {
     border-bottom: 1px solid #e5e5e5;
-    padding-top: 35px;
-    margin-bottom: 35px; }
+    padding-top: 40px;
+    margin-bottom: 40px; }
