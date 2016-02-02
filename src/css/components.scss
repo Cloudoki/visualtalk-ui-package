@@ -7,6 +7,7 @@
 	}
 }
 
+// MESSAGES BLOCK
 .message-block {
 	font-size: .8em; 
 
@@ -45,6 +46,57 @@
 			.message-body .message-meta {
 				border: none;
 			}
+		}
+	}
+}
+
+// APPOINTMENTS BLOCK
+.appointment-block {
+	width: 100%;
+
+	.appointment-block-header {
+		border-bottom: 1px solid #e5e5e5;
+		font-size: .8em;
+
+		.appointment-title {
+			font-weight: bold;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.appointments {
+		.appointment {
+			td {
+				padding: 10px 5px;
+
+				.vt-btn {
+					background-color: #ccd1d3;
+				}
+
+				&.user{
+					width: 25%;
+				}
+
+				&.professional {
+					width: 40%;
+				}
+
+				&.end-time:before {
+					content: '-';
+					position: relative;
+					left: -5px;
+				}
+
+				&:first-child { padding-left: 0; }
+				&:last-child { padding-right: 0; }
+			}
+		}
+	}
+
+	&.active {
+		.vt-btn {
+			background-color: $blue !important;
 		}
 	}
 }

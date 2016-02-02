@@ -1,9 +1,13 @@
 .vt-btn {
 	border-radius: 40px;
     display: inline-block;
-    background-color: #ccc;
+    background-color: $blue;
     padding: 10px 20px;
     color: #fff;
+
+    &.small {
+        padding: 6px 20px;
+    }
 
     &.wide {
     	padding: 10px 50px;

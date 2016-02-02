@@ -26,6 +26,15 @@ ul {
   ul li {
     list-style: none; }
 
+a {
+  color: #2198e8;
+  text-decoration: underline; }
+  a:hover {
+    color: #1684cf; }
+
+i.icon {
+  margin-right: 5px; }
+
 .muted {
   color: #7f8c90; }
 
@@ -54,9 +63,11 @@ ul {
 .vt-btn {
   border-radius: 40px;
   display: inline-block;
-  background-color: #ccc;
+  background-color: #2198e8;
   padding: 10px 20px;
   color: #fff; }
+  .vt-btn.small {
+    padding: 6px 20px; }
   .vt-btn.wide {
     padding: 10px 50px; }
   .vt-btn.full {
@@ -76,7 +87,12 @@ header nav.navbar-default {
     margin: 0 10px; }
     header nav.navbar-default .navbar-nav > li > a {
       padding-top: 25px;
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      text-decoration: none; }
+    header nav.navbar-default .navbar-nav > li.active > a, header nav.navbar-default .navbar-nav > li.open > a {
+      color: #000;
+      text-decoration: underline;
+      background-color: #fff !important; }
   header nav.navbar-default .navbar-brand {
     padding: 23px 0 23px 0;
     height: 70px;
@@ -113,6 +129,34 @@ header nav.navbar-default {
     .message-block .message:last-child .message-body .message-meta {
       border: none; }
 
+.appointment-block {
+  width: 100%; }
+  .appointment-block .appointment-block-header {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: .8em; }
+    .appointment-block .appointment-block-header .appointment-title {
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 10px; }
+  .appointment-block .appointments .appointment td {
+    padding: 10px 5px; }
+    .appointment-block .appointments .appointment td .vt-btn {
+      background-color: #ccd1d3; }
+    .appointment-block .appointments .appointment td.user {
+      width: 25%; }
+    .appointment-block .appointments .appointment td.professional {
+      width: 40%; }
+    .appointment-block .appointments .appointment td.end-time:before {
+      content: '-';
+      position: relative;
+      left: -5px; }
+    .appointment-block .appointments .appointment td:first-child {
+      padding-left: 0; }
+    .appointment-block .appointments .appointment td:last-child {
+      padding-right: 0; }
+  .appointment-block.active .vt-btn {
+    background-color: #2198e8 !important; }
+
 .vt-panel {
   border-radius: 5px;
   background-color: #fff;
@@ -125,6 +169,8 @@ header nav.navbar-default {
     margin-bottom: 15px; }
   .vt-panel.half-size {
     max-width: 600px; }
+  .vt-panel.big-size {
+    max-width: 700px; }
   .vt-panel .separator {
     border-bottom: 1px solid #e5e5e5;
     padding-top: 35px;
