@@ -4,6 +4,11 @@
     background-color: $blue;
     padding: 10px 20px;
     color: #fff;
+    text-align: center;
+
+    > i {
+        margin-right: 10px;
+    }
 
     &.small {
         padding: 6px 20px;
