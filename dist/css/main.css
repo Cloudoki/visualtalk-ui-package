@@ -101,6 +101,34 @@ header nav.navbar-default {
     height: 70px;
     margin-right: 80px; }
 
+footer {
+  font-size: .7em;
+  padding: 15px 0 30px;
+  border-top: 1px solid #bbb;
+  color: #999; }
+  footer .content-container {
+    overflow: hidden; }
+    footer .content-container:after {
+      content: '';
+      clear: both; }
+  footer .footer-part {
+    float: left;
+    width: 50%; }
+  footer .footer-right {
+    text-align: right; }
+    footer .footer-right ul li {
+      display: inline-block;
+      margin-left: -3px; }
+      footer .footer-right ul li > a {
+        padding: 0 10px;
+        border-right: 1px solid #bbb;
+        color: #999;
+        text-decoration: none; }
+        footer .footer-right ul li > a:hover {
+          text-decoration: underline; }
+      footer .footer-right ul li:last-child > a {
+        border: none; }
+
 .vt-avatar {
   border-radius: 100%;
   overflow: hidden; }
