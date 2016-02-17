@@ -18,8 +18,10 @@
 		margin-top:0px;
 	}
 
-	.vt-panel .vt-panel-content .vt-info{
+	&.vt-panel .vt-panel-content .vt-auth-info{
 		margin-bottom:30px;
+		text-align:center;
+		font-size:14px;
 	}
 
 	/* Imput fields and labels */
@@ -79,19 +81,19 @@
 	/* Form actions: submit and recover password; */
 	.form-actions{
 		padding-top:40px;
-		.vt-login-submit {
+		.vt-submit {
 			width: 150px;
 			border:none;
 			display:block;
 			margin: 0 auto;
 		}
-		.vt-forgot{
+		.vt-action-link{
 			color:#7f8c90;
 			margin-top:15px;
 			display:block;
 			text-align:center;
 		}
-		.vt-forgot:hover{
+		.vt-action-link:hover{
 			color: #465a65
 		}
 	}
