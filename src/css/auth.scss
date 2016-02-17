@@ -26,6 +26,7 @@
 
 	/* Imput fields and labels */
 	&.vt-panel .vt-panel-content .vt-input {
+		margin-bottom: 40px;
 		label{
 			padding:8px 10px;
 			width:60px;
@@ -80,7 +81,7 @@
 
 	/* Form actions: submit and recover password; */
 	.form-actions{
-		padding-top:40px;
+
 		.vt-submit {
 			width: 150px;
 			border:none;
@@ -100,14 +101,33 @@
 
 }
 
+.auth-register{
+	width: 730px;
+}
 
+.auth-box-left{
+	width:50%;
+	float:left;
+}
 
+.auth-register .vt-input input {
+	width: 250px!important;
+}
 
+.auth-box-right{
+	width:50%;
+	float:right;
+}
 
+.auth-box-right .form-group{
+	width: fit-content;
+	float: right;
+}
 
+.auth-box-left .form-group{
+	width: fit-content;
+}
 
-
-
-
-
-
+.clear-fix{
+	clear: both;
+}
