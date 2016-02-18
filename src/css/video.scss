@@ -1,0 +1,52 @@
+.vt-video-wrapper {
+	background-color: #3a3a3a;
+
+	> .content-container {
+		padding: 30px;
+
+		.vt-video-controls {
+			padding: 0 30px;
+			background-color: #222222;
+			border-radius: 50px;
+			margin-top: 30px;
+			position: relative;
+			overflow: hidden;
+
+			.vt-video-controls-left,
+			.vt-video-controls-right,
+			 {
+				width: 50%;
+				float: left;
+			}
+
+			.vt-video-controls-right {
+				text-align: right;
+			}
+
+			.vt-video-controls-middle {
+				    position: absolute;
+				    width: 160px;
+				    margin-right: -80px;
+				    right: 50%;
+				    top: 17px;
+			}
+
+			.vt-video-control {
+				display: inline-block;
+				font-size: 1.7em;
+				color: #8b8b8b;
+				padding: 20px;
+
+				&:hover {
+					color: #ddd;
+					cursor: pointer;
+				}
+			}
+
+			&:after {
+				content: '';
+				clear: both;
+			}
+		}
+	}
+}

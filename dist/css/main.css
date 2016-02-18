@@ -63,6 +63,44 @@ i.icon {
   margin-bottom: 50px;
   padding-top: 15px; }
 
+.vt-loading {
+  text-align: center;
+  margin: 50px 0;
+  display: none; }
+  .vt-loading.loading {
+    display: block; }
+  .vt-loading:before {
+    content: "\f45a";
+    font-size: 4em;
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscal;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    opacity: .3; }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 .vt-btn {
   border-radius: 40px;
   display: inline-block;
@@ -75,6 +113,9 @@ i.icon {
     margin-right: 10px; }
   .vt-btn.small {
     padding: 6px 20px; }
+  .vt-btn.mini {
+    padding: 6px 15px;
+    font-size: .9em; }
   .vt-btn.wide {
     padding: 10px 50px; }
   .vt-btn.full {
@@ -93,21 +134,22 @@ i.icon {
     color: #fff;
     text-decoration: none; }
 
-header nav.navbar-default {
+header nav.navbar.navbar-default {
   background-color: #fff;
+  color: #3a3a3a;
   border: none;
   box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.15); }
-  header nav.navbar-default .navbar-nav > li {
+  header nav.navbar.navbar-default .navbar-nav > li {
     margin: 0 10px; }
-    header nav.navbar-default .navbar-nav > li > a {
+    header nav.navbar.navbar-default .navbar-nav > li > a {
       padding-top: 25px;
       padding-bottom: 25px;
       text-decoration: none; }
-    header nav.navbar-default .navbar-nav > li.active > a, header nav.navbar-default .navbar-nav > li.open > a {
+    header nav.navbar.navbar-default .navbar-nav > li.active > a, header nav.navbar.navbar-default .navbar-nav > li.open > a {
       color: #000;
       text-decoration: underline;
       background-color: #fff !important; }
-  header nav.navbar-default .navbar-brand {
+  header nav.navbar.navbar-default .navbar-brand {
     padding: 23px 0 23px 0;
     height: 70px;
     margin-right: 80px; }
@@ -145,6 +187,10 @@ footer {
   overflow: hidden; }
   .vt-avatar.big {
     max-width: 100px; }
+  .vt-avatar.mini {
+    width: 25px;
+    height: 25px;
+    background-color: #e5e5e5; }
 
 .message-block {
   font-size: .8em; }
@@ -180,24 +226,51 @@ footer {
       font-weight: bold;
       display: inline-block;
       margin-bottom: 10px; }
-  .appointment-block .appointments .appointment td {
-    padding: 10px 5px; }
-    .appointment-block .appointments .appointment td .vt-btn {
-      background-color: #ccd1d3; }
-    .appointment-block .appointments .appointment td.user {
-      width: 25%; }
-    .appointment-block .appointments .appointment td.professional {
-      width: 40%; }
-    .appointment-block .appointments .appointment td.end-time:before {
-      content: '-';
-      position: relative;
-      left: -5px; }
-    .appointment-block .appointments .appointment td:first-child {
-      padding-left: 0; }
-    .appointment-block .appointments .appointment td:last-child {
-      padding-right: 0; }
-  .appointment-block.active .vt-btn {
-    background-color: #2198e8; }
+  .appointment-block .appointments .appointment td.user {
+    width: 25%; }
+  .appointment-block .appointments .appointment td.professional {
+    width: 40%; }
+  .appointment-block .appointments .appointment td.end-time:before {
+    content: '-';
+    position: relative;
+    left: -5px; }
+
+.vt-table {
+  display: table;
+  width: 100%; }
+  .vt-table .vt-thead {
+    display: table-header-group; }
+    .vt-table .vt-thead > div {
+      display: table-cell;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: .8em;
+      font-weight: bold;
+      padding-bottom: 10px; }
+  .vt-table .vt-tbody {
+    display: table-row-group; }
+    .vt-table .vt-tbody > div {
+      display: table-row; }
+      .vt-table .vt-tbody > div > div {
+        display: table-cell;
+        padding: 10px 5px; }
+        .vt-table .vt-tbody > div > div .vt-btn {
+          background-color: #ccd1d3; }
+          .vt-table .vt-tbody > div > div .vt-btn.open, .vt-table .vt-tbody > div > div .vt-btn.active {
+            background-color: #2198e8; }
+        .vt-table .vt-tbody > div > div:first-child {
+          padding-left: 0; }
+        .vt-table .vt-tbody > div > div:last-child {
+          padding-right: 0; }
+  .vt-table .vt-table-actions .vt-table-action {
+    display: inline-block;
+    padding: 6px;
+    color: #7f8c90;
+    font-size: 1.2em;
+    opacity: .4;
+    transition: opacity .25s; }
+    .vt-table .vt-table-actions .vt-table-action:hover {
+      opacity: .7;
+      cursor: pointer; }
 
 .vt-panel {
   border-radius: 5px;
@@ -217,3 +290,227 @@ footer {
     border-bottom: 1px solid #e5e5e5;
     padding-top: 40px;
     margin-bottom: 40px; }
+
+.vt-video-wrapper {
+  background-color: #3a3a3a; }
+  .vt-video-wrapper > .content-container {
+    padding: 30px; }
+    .vt-video-wrapper > .content-container .vt-video-controls {
+      padding: 0 30px;
+      background-color: #222222;
+      border-radius: 50px;
+      margin-top: 30px;
+      position: relative;
+      overflow: hidden; }
+      .vt-video-wrapper > .content-container .vt-video-controls .vt-video-controls-left,
+      .vt-video-wrapper > .content-container .vt-video-controls .vt-video-controls-right {
+        width: 50%;
+        float: left; }
+      .vt-video-wrapper > .content-container .vt-video-controls .vt-video-controls-right {
+        text-align: right; }
+      .vt-video-wrapper > .content-container .vt-video-controls .vt-video-controls-middle {
+        position: absolute;
+        width: 160px;
+        margin-right: -80px;
+        right: 50%;
+        top: 17px; }
+      .vt-video-wrapper > .content-container .vt-video-controls .vt-video-control {
+        display: inline-block;
+        font-size: 1.7em;
+        color: #8b8b8b;
+        padding: 20px; }
+        .vt-video-wrapper > .content-container .vt-video-controls .vt-video-control:hover {
+          color: #ddd;
+          cursor: pointer; }
+      .vt-video-wrapper > .content-container .vt-video-controls:after {
+        content: '';
+        clear: both; }
+
+.modal .modal-content {
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 10px; }
+  .modal .modal-content .form-group {
+    margin: 0; }
+  .modal .modal-content .modal-footer {
+    padding: 20px 30px 30px; }
+  .modal .modal-content.split-modal {
+    overflow: hidden; }
+    .modal .modal-content.split-modal .modal-inside {
+      width: 200%;
+      position: relative;
+      left: 0;
+      transition: left .5s; }
+      .modal .modal-content.split-modal .modal-inside.slide {
+        left: -100%; }
+      .modal .modal-content.split-modal .modal-inside .modal-part {
+        width: 50%;
+        float: left; }
+    .modal .modal-content.split-modal:after {
+      content: '';
+      clear: both; }
+
+.regular-input {
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  height: 38px;
+  padding: 7px 0; }
+
+.input-group.date .input-group-addon,
+.input-group.time .input-group-addon {
+  font-size: 2em;
+  opacity: .3; }
+
+.vt-sugestions {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  top: 71px;
+  font-size: .8em; }
+  .vt-sugestions .vt-sugestions-list {
+    padding: 15px 30px; }
+    .vt-sugestions .vt-sugestions-list .vt-sugestion {
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 8px;
+      margin-bottom: 8px; }
+      .vt-sugestions .vt-sugestions-list .vt-sugestion .vt-sugestion-field {
+        display: inline-block;
+        margin-right: 10px; }
+      .vt-sugestions .vt-sugestions-list .vt-sugestion:hover {
+        cursor: pointer; }
+      .vt-sugestions .vt-sugestions-list .vt-sugestion:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+  .vt-sugestions .add-entry {
+    text-align: center;
+    padding: 12px;
+    background-color: #f5f5f5;
+    color: #7f8c90; }
+    .vt-sugestions .add-entry:hover {
+      cursor: pointer;
+      color: #333; }
+
+/*!
+ * Timepicker Component for Twitter Bootstrap
+ *
+ * Copyright 2013 Joris de Wit
+ *
+ * Contributors https://github.com/jdewit/bootstrap-timepicker/graphs/contributors
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+.bootstrap-timepicker {
+  position: relative; }
+  .bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu {
+    left: auto;
+    right: 0; }
+    .bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:before {
+      left: auto;
+      right: 12px; }
+    .bootstrap-timepicker.pull-right .bootstrap-timepicker-widget.dropdown-menu:after {
+      left: auto;
+      right: 13px; }
+  .bootstrap-timepicker .input-group-addon {
+    cursor: pointer; }
+    .bootstrap-timepicker .input-group-addon i {
+      display: inline-block;
+      width: 16px;
+      height: 16px; }
+
+.bootstrap-timepicker-widget {
+  z-index: 10000 !important; }
+  .bootstrap-timepicker-widget.dropdown-menu {
+    padding: 4px; }
+    .bootstrap-timepicker-widget.dropdown-menu.open {
+      display: inline-block; }
+    .bootstrap-timepicker-widget.dropdown-menu:before {
+      border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      content: "";
+      display: inline-block;
+      position: absolute; }
+    .bootstrap-timepicker-widget.dropdown-menu:after {
+      border-bottom: 6px solid #FFFFFF;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      content: "";
+      display: inline-block;
+      position: absolute; }
+  .bootstrap-timepicker-widget.timepicker-orient-left:before {
+    left: 6px; }
+  .bootstrap-timepicker-widget.timepicker-orient-left:after {
+    left: 7px; }
+  .bootstrap-timepicker-widget.timepicker-orient-right:before {
+    right: 6px; }
+  .bootstrap-timepicker-widget.timepicker-orient-right:after {
+    right: 7px; }
+  .bootstrap-timepicker-widget.timepicker-orient-top:before {
+    top: -7px; }
+  .bootstrap-timepicker-widget.timepicker-orient-top:after {
+    top: -6px; }
+  .bootstrap-timepicker-widget.timepicker-orient-bottom:before {
+    bottom: -7px;
+    border-bottom: 0;
+    border-top: 7px solid #999; }
+  .bootstrap-timepicker-widget.timepicker-orient-bottom:after {
+    bottom: -6px;
+    border-bottom: 0;
+    border-top: 6px solid #ffffff; }
+  .bootstrap-timepicker-widget a.btn, .bootstrap-timepicker-widget input {
+    border-radius: 4px; }
+  .bootstrap-timepicker-widget table {
+    width: 100%;
+    margin: 0; }
+    .bootstrap-timepicker-widget table td {
+      text-align: center;
+      height: 30px;
+      margin: 0;
+      padding: 2px; }
+      .bootstrap-timepicker-widget table td:not(.separator) {
+        min-width: 30px; }
+      .bootstrap-timepicker-widget table td span {
+        width: 100%; }
+      .bootstrap-timepicker-widget table td a {
+        border: 1px transparent solid;
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 8px 0;
+        outline: 0;
+        color: #333; }
+        .bootstrap-timepicker-widget table td a:hover {
+          text-decoration: none;
+          background-color: #eee;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+          border-color: #ddd; }
+        .bootstrap-timepicker-widget table td a i {
+          margin-top: 2px;
+          font-size: 18px; }
+      .bootstrap-timepicker-widget table td input {
+        width: 25px;
+        margin: 0;
+        text-align: center; }
+
+.bootstrap-timepicker-widget .modal-content {
+  padding: 4px; }
+
+@media (min-width: 767px) {
+  .bootstrap-timepicker-widget.modal {
+    width: 200px;
+    margin-left: -100px; } }
+
+@media (max-width: 767px) {
+  .bootstrap-timepicker {
+    width: 100%; }
+    .bootstrap-timepicker .dropdown-menu {
+      width: 100%; } }

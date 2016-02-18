@@ -5,6 +5,12 @@
 	&.big {
 		max-width: 100px;
 	}
+
+	&.mini {
+		width: 25px;
+		height: 25px;
+		background-color: #e5e5e5;
+	}
 }
 
 // MESSAGES BLOCK
@@ -68,12 +74,6 @@
 	.appointments {
 		.appointment {
 			td {
-				padding: 10px 5px;
-
-				.vt-btn {
-					background-color: #ccd1d3;
-				}
-
 				&.user{
 					width: 25%;
 				}
@@ -87,6 +87,44 @@
 					position: relative;
 					left: -5px;
 				}
+			}
+		}
+	}
+}
+
+.vt-table {
+	display: table;
+	width: 100%;
+
+	.vt-thead {
+		display: table-header-group;
+
+		> div {
+			display: table-cell;
+			border-bottom: 1px solid #e5e5e5;
+			font-size: .8em;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+	}
+
+	.vt-tbody {
+		display: table-row-group;
+		> div {
+			display: table-row;
+
+			> div {
+				display: table-cell;
+				padding: 10px 5px;
+
+				.vt-btn {
+					background-color: #ccd1d3;
+
+					&.open,
+					&.active {
+						background-color: $blue;
+					}
+				}
 
 				&:first-child { padding-left: 0; }
 				&:last-child { padding-right: 0; }
@@ -94,9 +132,19 @@
 		}
 	}
 
-	&.active {
-		.vt-btn {
-			background-color: $blue;
+	.vt-table-actions {
+		.vt-table-action {
+			display: inline-block;
+			padding: 6px;
+			color: $grey;
+			font-size: 1.2em;
+			opacity: .4;
+			transition: opacity .25s;
+
+			&:hover {
+				opacity: .7;
+				cursor: pointer;
+			}
 		}
 	}
 }
