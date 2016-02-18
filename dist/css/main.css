@@ -514,3 +514,151 @@ footer {
     width: 100%; }
     .bootstrap-timepicker .dropdown-menu {
       width: 100%; } }
+
+#email-table-container {
+  background-color: #eee;
+  height: 100%; }
+
+#email-container {
+  width: 600px;
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
+#email-header .vt-page-header {
+  margin-bottom: 10px;
+  font-size: 28px; }
+
+#email-header img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.email-section-title h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.email-body-content {
+  font-size: 14px;
+  line-height: 150%;
+  padding: 30px;
+  text-align: justify; }
+
+.email-left-column-content, .email-right-column-content {
+  font-size: 14px;
+  line-height: 150%;
+  padding: 30px;
+  text-align: justify; }
+
+.email-left-column-content {
+  border-right: 1px solid #CCCCCC; }
+
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+.vt-panel-auth {
+  width: 400px;
+  /* Imput fields and labels */
+  /* Form actions: submit and recover password; */ }
+  .vt-panel-auth .vt-auth-title {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px; }
+  .vt-panel-auth.vt-panel .vt-panel-content .vt-auth-info {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px; }
+  .vt-panel-auth.vt-panel .vt-panel-content .vt-input {
+    margin-bottom: 40px; }
+    .vt-panel-auth.vt-panel .vt-panel-content .vt-input label {
+      padding: 8px 10px;
+      width: 60px;
+      display: inline-block;
+      font-size: 12px;
+      background-color: #ccd1d3;
+      text-align: center;
+      border-radius: 20px;
+      color: #fff;
+      margin-right: 10px; }
+    .vt-panel-auth.vt-panel .vt-panel-content .vt-input input {
+      padding: 8px 5px;
+      width: 295px;
+      border: 0;
+      color: #555;
+      outline: none;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+      background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+      background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+      background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+      -webkit-background-size: 0 2px,100% 1px;
+      background-size: 0 2px,100% 1px;
+      background-repeat: no-repeat;
+      background-position: center bottom, center -webkit-calc(100% - 1px);
+      background-position: center bottom, center calc(100% - 1px);
+      background-color: transparent;
+      -webkit-transition: background 0s ease-out;
+      -o-transition: background 0s ease-out;
+      transition: background 0s ease-out;
+      float: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-radius: 0; }
+    .vt-panel-auth.vt-panel .vt-panel-content .vt-input input:focus {
+      outline: none;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+      background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+      background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);
+      background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+      -webkit-background-size: 100% 2px, 100% 1px;
+      background-size: 100% 2px, 100% 1px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+  .vt-panel-auth .form-actions .vt-submit {
+    width: 150px;
+    border: none;
+    display: block;
+    margin: 0 auto; }
+  .vt-panel-auth .form-actions .vt-action-link {
+    color: #7f8c90;
+    margin-top: 15px;
+    display: block;
+    text-align: center; }
+  .vt-panel-auth .form-actions .vt-action-link:hover {
+    color: #465a65; }
+
+.auth-register {
+  width: 730px; }
+
+.auth-box-left {
+  width: 50%;
+  float: left; }
+
+.auth-register .vt-input input {
+  width: 250px !important; }
+
+.auth-box-right {
+  width: 50%;
+  float: right; }
+
+.auth-box-right .form-group {
+  width: fit-content;
+  float: right; }
+
+.auth-box-left .form-group {
+  width: fit-content; }
+
+.clear-fix {
+  clear: both; }
