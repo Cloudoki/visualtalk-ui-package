@@ -662,3 +662,16 @@ footer {
 
 .clear-fix {
   clear: both; }
+
+.error {
+  width: 80%;
+  margin: 0 auto; }
+  .error .error-msg {
+    color: #ff7070; }
+    .error .error-msg .alert {
+      font-weight: 600; }
+  .error .error-btn {
+    text-align: center;
+    margin-top: 10px; }
+    .error .error-btn input {
+      border: none; }
