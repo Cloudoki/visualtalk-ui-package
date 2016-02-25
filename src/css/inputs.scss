@@ -26,6 +26,8 @@
 
     .vt-sugestions-list {
     	padding: 15px 30px;
+    	max-height: 300px;
+    	overflow: auto;
 
     	.vt-sugestion {
 	    	border-bottom: 1px solid #e5e5e5;
