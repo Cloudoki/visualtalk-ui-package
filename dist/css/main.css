@@ -149,6 +149,9 @@ header nav.navbar.navbar-default {
       color: #000;
       text-decoration: underline;
       background-color: #fff !important; }
+  header nav.navbar.navbar-default .navbar-nav .dropdown-menu > li > a {
+    text-decoration: none;
+    font-weight: 300; }
   header nav.navbar.navbar-default .navbar-brand {
     padding: 23px 0 23px 0;
     height: 70px;
