@@ -74,6 +74,13 @@
 	.appointments {
 		.appointment {
 			td {
+
+				// &.vt-btn {
+				// 	background-color: #ccd1d3;
+				// }
+				
+				padding: 10px 5px;
+
 				&.user{
 					width: 25%;
 				}
@@ -82,10 +89,22 @@
 					width: 40%;
 				}
 
+				&.end-time, &.start-time {
+					width: 55px;
+				}
+
 				&.end-time:before {
 					content: '-';
 					position: relative;
 					left: -5px;
+				}
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
 				}
 			}
 		}
