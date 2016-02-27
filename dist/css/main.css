@@ -43,6 +43,8 @@ i.icon {
 
 .center {
   text-align: center; }
+  .center .vt-avatar {
+    margin: 0 auto; }
 
 .big {
   font-size: 1.2em; }
@@ -56,7 +58,8 @@ i.icon {
 
 .content-container {
   max-width: 1000px;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 .vt-page-header {
   text-align: center;
@@ -161,7 +164,8 @@ footer {
   font-size: .7em;
   padding: 15px 0 30px;
   border-top: 1px solid #bbb;
-  color: #999; }
+  color: #999;
+  margin-top: 60px; }
   footer .content-container {
     overflow: hidden; }
     footer .content-container:after {
@@ -187,9 +191,16 @@ footer {
 
 .vt-avatar {
   border-radius: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center center;
+  max-width: 100%;
+  background-color: #eee; }
   .vt-avatar.big {
-    max-width: 100px; }
+    width: 100px;
+    height: 100px; }
   .vt-avatar.mini {
     width: 25px;
     height: 25px;
@@ -229,14 +240,22 @@ footer {
       font-weight: bold;
       display: inline-block;
       margin-bottom: 10px; }
-  .appointment-block .appointments .appointment td.user {
-    width: 25%; }
-  .appointment-block .appointments .appointment td.professional {
-    width: 40%; }
-  .appointment-block .appointments .appointment td.end-time:before {
-    content: '-';
-    position: relative;
-    left: -5px; }
+  .appointment-block .appointments .appointment td {
+    padding: 10px 5px; }
+    .appointment-block .appointments .appointment td.user {
+      width: 25%; }
+    .appointment-block .appointments .appointment td.professional {
+      width: 40%; }
+    .appointment-block .appointments .appointment td.end-time, .appointment-block .appointments .appointment td.start-time {
+      width: 55px; }
+    .appointment-block .appointments .appointment td.end-time:before {
+      content: '-';
+      position: relative;
+      left: -5px; }
+    .appointment-block .appointments .appointment td:first-child {
+      padding-left: 0; }
+    .appointment-block .appointments .appointment td:last-child {
+      padding-right: 0; }
 
 .vt-table {
   display: table;
@@ -321,7 +340,21 @@ footer {
         display: inline-block;
         font-size: 1.7em;
         color: #8b8b8b;
-        padding: 20px; }
+        padding: 20px;
+        position: relative; }
+        .vt-video-wrapper > .content-container .vt-video-controls .vt-video-control.toggleable.toggled {
+          opacity: .6; }
+          .vt-video-wrapper > .content-container .vt-video-controls .vt-video-control.toggleable.toggled:after {
+            content: '';
+            width: 5px;
+            background: #8b8b8b;
+            height: 35px;
+            display: block;
+            position: absolute;
+            top: 22px;
+            transform: rotate(-30deg);
+            left: 25px;
+            border: 2px solid #222; }
         .vt-video-wrapper > .content-container .vt-video-controls .vt-video-control:hover {
           color: #ddd;
           cursor: pointer; }
@@ -344,7 +377,7 @@ footer {
       width: 200%;
       position: relative;
       left: 0;
-      transition: left .5s; }
+      transition: left .25s; }
       .modal .modal-content.split-modal .modal-inside.slide {
         left: -100%; }
       .modal .modal-content.split-modal .modal-inside .modal-part {
@@ -376,14 +409,23 @@ footer {
   top: 71px;
   font-size: .8em; }
   .vt-sugestions .vt-sugestions-list {
-    padding: 15px 30px; }
+    padding: 15px 30px;
+    max-height: 300px;
+    overflow: auto; }
     .vt-sugestions .vt-sugestions-list .vt-sugestion {
       border-bottom: 1px solid #e5e5e5;
       padding-bottom: 8px;
       margin-bottom: 8px; }
       .vt-sugestions .vt-sugestions-list .vt-sugestion .vt-sugestion-field {
         display: inline-block;
-        margin-right: 10px; }
+        margin-right: 10px;
+        position: relative; }
+        .vt-sugestions .vt-sugestions-list .vt-sugestion .vt-sugestion-field .vt-avatar {
+          position: absolute;
+          top: -18px;
+          max-width: initial; }
+        .vt-sugestions .vt-sugestions-list .vt-sugestion .vt-sugestion-field.client-name {
+          padding-left: 30px; }
       .vt-sugestions .vt-sugestions-list .vt-sugestion:hover {
         cursor: pointer; }
       .vt-sugestions .vt-sugestions-list .vt-sugestion:last-child {

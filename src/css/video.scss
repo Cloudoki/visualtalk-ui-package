@@ -36,6 +36,25 @@
 				font-size: 1.7em;
 				color: #8b8b8b;
 				padding: 20px;
+				position: relative;
+
+				&.toggleable {
+					&.toggled {
+						opacity: .6;
+						&:after {
+							content: '';
+						    width: 5px;
+						    background: #8b8b8b;
+						    height: 35px;
+						    display: block;
+						    position: absolute;
+						    top: 22px;
+						    transform: rotate(-30deg);
+						    left: 25px;
+						    border: 2px solid #222;
+						}
+					}
+				}
 
 				&:hover {
 					color: #ddd;

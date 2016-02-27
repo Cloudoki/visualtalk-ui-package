@@ -14,8 +14,8 @@
 }
 
 .vt-sugestions {
-	display: none;
-	width: 100%;
+    display: none;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -25,41 +25,52 @@
     font-size: .8em;
 
     .vt-sugestions-list {
-    	padding: 15px 30px;
-    	max-height: 300px;
-    	overflow: auto;
+        padding: 15px 30px;
+        max-height: 300px;
+        overflow: auto;
 
-    	.vt-sugestion {
-	    	border-bottom: 1px solid #e5e5e5;
-	    	padding-bottom: 8px;
-	    	margin-bottom: 8px;
+        .vt-sugestion {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
 
-	    	.vt-sugestion-field {
-	    		display: inline-block;
-	    		margin-right: 10px;
-	    	}
+            .vt-sugestion-field {
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
 
-	    	&:hover {
-		    	cursor: pointer;
-		    }
+                .vt-avatar {
+                    position: absolute;
+                    top: -18px;
+                    max-width: initial;
+                }
 
-		    &:last-child {
-		    	border: none;
-		    	margin-bottom: 0;
-		    	padding-bottom: 0;
-		    }
-	    }
+                &.client-name {
+                    padding-left: 30px;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:last-child {
+                border: none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
     }
 
     .add-entry {
-    	text-align: center;
-    	padding: 12px;
-    	background-color: #f5f5f5;
-    	color: $grey;
+        text-align: center;
+        padding: 12px;
+        background-color: #f5f5f5;
+        color: $grey;
 
-    	&:hover {
-    		cursor: pointer;
-    		color: #333;
-    	}
+        &:hover {
+            cursor: pointer;
+            color: #333;
+        }
     }
 }
