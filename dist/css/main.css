@@ -626,15 +626,11 @@ footer {
   .vt-panel-auth.vt-panel .vt-panel-content .vt-input {
     margin-bottom: 40px; }
     .vt-panel-auth.vt-panel .vt-panel-content .vt-input label {
-      padding: 8px 10px;
-      width: 60px;
-      display: inline-block;
       font-size: 12px;
-      background-color: #ccd1d3;
-      text-align: center;
-      border-radius: 20px;
-      color: #fff;
-      margin-right: 10px; }
+      line-height: 1.07142857;
+      color: #BDBDBD;
+      font-weight: 400;
+      margin: 16px 0 0 0; }
     .vt-panel-auth.vt-panel .vt-panel-content .vt-input input {
       padding: 8px 5px;
       width: 295px;
