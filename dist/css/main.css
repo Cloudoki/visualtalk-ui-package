@@ -720,3 +720,6 @@ footer {
     margin-top: 10px; }
     .error .error-btn input {
       border: none; }
+
+.resetpassword-sent {
+  text-align: center; }
