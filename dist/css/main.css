@@ -626,9 +626,9 @@ footer {
   .vt-panel-auth.vt-panel .vt-panel-content .vt-input {
     margin-bottom: 40px; }
     .vt-panel-auth.vt-panel .vt-panel-content .vt-input label {
-      font-size: 12px;
-      color: #BDBDBD;
-      font-weight: 400;
+      font-size: 16px;
+      color: #939090;
+      font-weight: 500;
       margin: 16px 18px 0 0;
       display: inline-block;
       width: 60px; }
@@ -672,7 +672,8 @@ footer {
     width: 150px;
     border: none;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 16px; }
   .vt-panel-auth .form-actions .vt-action-link {
     color: #7f8c90;
     margin-top: 15px;
@@ -680,6 +681,10 @@ footer {
     text-align: center; }
   .vt-panel-auth .form-actions .vt-action-link:hover {
     color: #465a65; }
+  .vt-panel-auth .form-actions .vt-forgot {
+    text-decoration: none;
+    font-size: 13px;
+    color: #d1d1d1; }
 
 .auth-register {
   width: 730px; }
