@@ -160,6 +160,22 @@ header nav.navbar.navbar-default {
     height: 70px;
     margin-right: 80px; }
 
+header .nav-avatar {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  margin-top: -1px;
+  border-radius: 50%;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat; }
+
+header .nav .navbar-icon:hover, header .nav .current {
+  color: #009688 !important;
+  text-decoration: none;
+  background-color: #EEEEEE; }
+
 footer {
   font-size: .7em;
   padding: 15px 0 30px;
@@ -628,11 +644,14 @@ footer {
     .vt-panel-auth.vt-panel .vt-panel-content .vt-input label {
       font-size: 16px;
       color: #939090;
-      font-weight: 500;
+      font-weight: 300;
       margin: 10px 18px 0 0;
       display: inline-block;
-      width: 60px; }
+      width: 60px;
+      line-height: 1em; }
     .vt-panel-auth.vt-panel .vt-panel-content .vt-input input {
+      font-size: 1em;
+      font-weight: 300;
       padding: 8px 5px;
       width: 310px;
       border: 0;
