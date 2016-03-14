@@ -596,6 +596,13 @@ footer {
   margin-top: 15px;
   margin-bottom: 15px; }
 
+#email-footer-container {
+  width: 600px;
+  margin-bottom: 50px; }
+
+.email-footer-text {
+  color: #999; }
+
 .email-section-title h3 {
   font-size: 18px;
   margin-top: 0;
