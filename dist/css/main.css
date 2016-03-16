@@ -131,6 +131,11 @@ i.icon {
     background-color: #e94a35; }
     .vt-btn.redded:hover {
       background-color: #d13722; }
+  .vt-btn.inactive {
+    background-color: #ddd; }
+    .vt-btn.inactive:hover {
+      background-color: #ddd;
+      cursor: default; }
   .vt-btn:hover {
     background-color: #1684cf;
     cursor: pointer;
@@ -309,6 +314,8 @@ footer {
     .vt-table .vt-table-actions .vt-table-action:hover {
       opacity: .7;
       cursor: pointer; }
+  .vt-table.underlined .vt-body > div > div, .vt-table.underlined tbody td {
+    border-bottom: 1px solid #000; }
 
 .vt-panel {
   border-radius: 5px;
@@ -324,6 +331,8 @@ footer {
     max-width: 550px; }
   .vt-panel.big-size {
     max-width: 700px; }
+  .vt-panel.huge-size {
+    max-width: 1000px; }
   .vt-panel .separator {
     border-bottom: 1px solid #e5e5e5;
     padding-top: 40px;
@@ -333,6 +342,8 @@ footer {
   background-color: #3a3a3a; }
   .vt-video-wrapper > .content-container {
     padding: 30px; }
+    .vt-video-wrapper > .content-container .flashobject {
+      display: none; }
     .vt-video-wrapper > .content-container .vt-video-controls {
       padding: 0 30px;
       background-color: #222222;
@@ -377,6 +388,10 @@ footer {
       .vt-video-wrapper > .content-container .vt-video-controls:after {
         content: '';
         clear: both; }
+  .vt-video-wrapper.flash-content .flashobject {
+    display: block; }
+  .vt-video-wrapper.flash-content .vt-video {
+    display: none; }
 
 .modal .modal-content {
   border-radius: 5px;
@@ -751,3 +766,32 @@ footer {
 
 .resetpassword-sent {
   text-align: center; }
+
+section.notifications {
+  position: fixed;
+  top: 70px;
+  right: 0; }
+  section.notifications [data-role="notifications-container"] {
+    display: block !important; }
+  section.notifications .vt-notification {
+    font-size: .8em;
+    padding: 30px 40px 30px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    left: 0;
+    transition: left .25s; }
+    section.notifications .vt-notification .mark-as-read {
+      position: absolute;
+      top: 16px;
+      right: 5px;
+      padding: 5px 10px;
+      font-size: .9em;
+      text-align: center;
+      opacity: .6; }
+    section.notifications .vt-notification.new-notification {
+      left: 100%; }
+    section.notifications .vt-notification:hover {
+      cursor: pointer;
+      background-color: #f9f9f9; }

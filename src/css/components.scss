@@ -173,4 +173,10 @@
 			}
 		}
 	}
+
+	&.underlined {
+		.vt-body > div > div, tbody td {
+			border-bottom: 1px solid #000;
+		}
+	}
 }

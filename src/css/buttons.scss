@@ -42,6 +42,14 @@
         }
     }
 
+    &.inactive {
+        background-color: $light-grey;
+        &:hover {
+            background-color: $light-grey;
+            cursor: default;
+        } 
+    }
+
     &:hover {
         background-color: $dark-blue;
     	cursor: pointer;

@@ -4,6 +4,10 @@
 	> .content-container {
 		padding: 30px;
 
+		.flashobject {
+			display: none;
+		}
+
 		.vt-video-controls {
 			padding: 0 30px;
 			background-color: #222222;
@@ -66,6 +70,17 @@
 				content: '';
 				clear: both;
 			}
+		}
+	}
+
+	&.flash-content {
+
+		.flashobject {
+			display: block;
+		}
+
+		.vt-video {
+			display: none;
 		}
 	}
 }
