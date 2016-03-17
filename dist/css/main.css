@@ -750,7 +750,8 @@ footer {
   clear: both; }
 
 #output-errors {
-  color: red; }
+  color: red;
+  text-align: center; }
 
 .error {
   width: 80%;
