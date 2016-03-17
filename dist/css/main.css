@@ -722,14 +722,18 @@ footer {
     color: #d1d1d1; }
 
 .auth-register {
-  width: fit-content; }
+  width: 850px;
+  overflow: hidden; }
 
 .auth-box-left {
   width: 50%;
   float: left; }
 
 .auth-register .vt-input input {
-  width: 250px !important; }
+  width: 270px !important; }
+
+.auth-register .vt-input label {
+  width: 100px !important; }
 
 .auth-box-right {
   width: 50%;
@@ -737,13 +741,16 @@ footer {
 
 .auth-box-right .form-group {
   width: fit-content;
-  float: left; }
+  float: right; }
 
 .auth-box-left .form-group {
   width: fit-content; }
 
 .clear-fix {
   clear: both; }
+
+#output-errors {
+  color: red; }
 
 .error {
   width: 80%;
