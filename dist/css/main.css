@@ -722,7 +722,7 @@ footer {
     color: #d1d1d1; }
 
 .auth-register {
-  width: 850px;
+  width: fit-content;
   overflow: hidden; }
 
 .auth-box-left {
