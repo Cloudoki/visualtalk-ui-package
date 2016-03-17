@@ -599,14 +599,12 @@ footer {
   margin-top: 50px; }
 
 #email-header .vt-page-header {
-  margin-bottom: 10px;
   font-size: 28px; }
 
 #email-header img {
   width: 30%;
   display: block;
-  margin: 0 auto;
-  margin-top: 15px; }
+  margin: 0 auto; }
 
 #email-footer-container {
   width: 600px;
@@ -618,7 +616,6 @@ footer {
 .email-section-title h3 {
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 10px;
   text-align: center; }
 
 .email-body-content {
