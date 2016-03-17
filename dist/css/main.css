@@ -753,6 +753,9 @@ footer {
   color: red;
   text-align: center; }
 
+.register-input {
+  height: 30px; }
+
 .error {
   width: 80%;
   margin: 0 auto; }
