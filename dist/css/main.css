@@ -136,11 +136,24 @@ i.icon {
     .vt-btn.inactive:hover {
       background-color: #ddd;
       cursor: default; }
+  .vt-btn.vt-loading:before {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 1.5em;
+    opacity: 1; }
   .vt-btn:hover {
     background-color: #1684cf;
     cursor: pointer;
     color: #fff;
     text-decoration: none; }
+
+.is-loading .vt-btn.vt-loading {
+  position: relative;
+  opacity: .7; }
+  .is-loading .vt-btn.vt-loading:before {
+    display: block; }
 
 header nav.navbar.navbar-default {
   background-color: #fff;
@@ -316,6 +329,15 @@ footer {
       cursor: pointer; }
   .vt-table.underlined .vt-body > div > div, .vt-table.underlined tbody td {
     border-bottom: 1px solid #000; }
+
+.alert.alert-success {
+  background-color: #3adb76 !important; }
+
+.alert.alert-warning {
+  background-color: #2198e8 !important; }
+
+.alert.alert-danger {
+  background-color: #e94a35 !important; }
 
 .vt-panel {
   border-radius: 5px;

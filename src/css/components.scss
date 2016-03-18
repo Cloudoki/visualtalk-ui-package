@@ -180,3 +180,18 @@
 		}
 	}
 }
+
+// ALERTS
+.alert {
+	&.alert-success {
+		background-color: $green !important;
+	}
+
+	&.alert-warning {
+		background-color: $blue !important;
+	}
+
+	&.alert-danger {
+		background-color: $red !important;
+	}
+}

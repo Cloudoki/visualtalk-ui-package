@@ -50,6 +50,18 @@
         } 
     }
 
+    &.vt-loading {
+        &:before {
+            display: none;
+            position: absolute;
+            top: 8px;
+            right: 15px;
+            font-size: 1.5em;
+            opacity: 1;
+
+        }
+    }
+
     &:hover {
         background-color: $dark-blue;
     	cursor: pointer;
@@ -58,6 +70,10 @@
     }
 }
 
-.vt-loading .vt-btn.loading-btn {
-    
+.is-loading .vt-btn.vt-loading {
+    position: relative;
+    opacity: .7;
+    &:before {
+        display: block;
+    }
 }
