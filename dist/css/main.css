@@ -455,7 +455,8 @@ footer {
     width: 100%;
     height: 100%; }
     .vt-video-wrapper.fullscreen > .content-container {
-      max-width: 100%; }
+      max-width: 100%;
+      padding: 0; }
       .vt-video-wrapper.fullscreen > .content-container .vt-video video {
         box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.5); }
       .vt-video-wrapper.fullscreen > .content-container .vt-video-controls-wrapper {
