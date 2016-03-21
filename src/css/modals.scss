@@ -38,4 +38,10 @@
 			}
 		}
 	}
+
+	.modal-dialog {
+		&.mini {
+			width: 450px;
+		}
+	}
 }
