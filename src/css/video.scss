@@ -6,14 +6,20 @@
 
 		.vt-video {
 			position: relative;
+			background-color: #3a3a3a;
+			width: 100%;
+			height: 100%;
+			transition: all -25s;
 
 			.local-stream {
 				position: absolute;
+				max-width: 250px;
 				top: 15px;
 				right: 15px;
 				z-index: 10;
 				width: 25%;
 				box-shadow: 0 0px 10px 0 rgba(0,0,0,0.5);
+				transition: all -25s;
 			}
 		}
 
@@ -26,8 +32,12 @@
 			background-color: #222222;
 			border-radius: 50px;
 			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
 			position: relative;
 			overflow: hidden;
+			transition: all -25s;
+			max-width: 940px;
 
 			.vt-video-controls-left,
 			.vt-video-controls-right,
@@ -55,6 +65,10 @@
 				padding: 20px;
 				position: relative;
 
+				.ion-android-contract {
+					display: none;
+				}
+
 				&.toggleable {
 					&.toggled {
 						opacity: .6;
@@ -71,6 +85,10 @@
 						    border: 2px solid #222;
 						}
 					}
+				}
+
+				&.control-share {
+					display: none;
 				}
 
 				&:hover {
@@ -94,6 +112,46 @@
 
 		.vt-video {
 			display: none;
+		}
+	}
+
+	&.fullscreen {
+		width: 100%;
+		height: 100%;
+
+		> .content-container {
+			max-width: 100%;
+
+			.vt-video video{
+				box-shadow: 0 0px 10px 0 rgba(0,0,0,0.5);
+			}
+
+			.vt-video-controls-wrapper {
+				position: absolute;
+			    width: 100%;
+			    left: 0;
+			    bottom: 30px;
+
+			    .vt-video-controls {
+			    	background-color: rgba(0,0,0,0.4);
+			    	.vt-video-control {
+			    		color: #bbb;			    		
+
+				    	.ion-android-contract {
+							display: inline-block;
+						}
+						.ion-android-expand {
+							display: none;
+						}
+					}
+			    }
+			}
+		}
+	}
+
+	&.on-chrome {
+		.control-share {
+			display: inline-block !important;
 		}
 	}
 }
