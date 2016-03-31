@@ -716,6 +716,8 @@ footer {
   line-height: 150%;
   padding: 30px;
   text-align: justify; }
+  .email-body-content .copy-paste {
+    color: #777; }
 
 .email-left-column-content, .email-right-column-content {
   font-size: 14px;
