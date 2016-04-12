@@ -33,7 +33,8 @@ section.notifications {
 
 		&.SESSION_START-notification {
 			.mark-as-read {
-				display: none;
+				color: #fff;
+				margin-left: 10px;
 			}
 
 			color: #fff;
@@ -53,9 +54,9 @@ section.notifications {
 			    -webkit-font-smoothing: antialiased;
 			    -moz-osx-font-smoothing: grayscale;
 			    position: absolute;
-			    right: 0;
-			    right: 14px;
     			font-size: 18px;
+    			left: 0;
+				margin-left: 10px;
 			}
 
 			&:hover {

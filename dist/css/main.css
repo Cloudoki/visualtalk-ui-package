@@ -896,7 +896,8 @@ section.notifications {
       color: #fff;
       background-color: #3adb76; }
       section.notifications .vt-notification.SESSION_START-notification .mark-as-read {
-        display: none; }
+        color: #fff;
+        margin-left: 10px; }
       section.notifications .vt-notification.SESSION_START-notification:before {
         content: "\f4b9";
         display: inline-block;
@@ -911,9 +912,9 @@ section.notifications {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         position: absolute;
-        right: 0;
-        right: 14px;
-        font-size: 18px; }
+        font-size: 18px;
+        left: 0;
+        margin-left: 10px; }
       section.notifications .vt-notification.SESSION_START-notification:hover {
         background-color: #2ec566; }
     section.notifications .vt-notification:hover {
